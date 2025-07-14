@@ -1,4 +1,4 @@
-# **Sales Analysis Of AdventureWorksDW2019 Data Analyst Project:**
+# **Sales Analysis Of AdventureWorksDW2019 Data Analysis Project:**
 
 
 ## **(1) Project Roadmap:**
