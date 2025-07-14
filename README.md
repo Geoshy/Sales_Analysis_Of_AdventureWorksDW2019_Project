@@ -125,11 +125,15 @@ In the **Data Integration into Power BI** section, we import **CSV files** and *
 
 ![alt text](Figs/2.PNG)
 
-## **(8) Creating a Dynamic Dashboard Using Power BI:**
+## **(8) Data Modeling:**
+The data model integrates key tables: **DimCustomer_Table** for customer details, **DimProduct_Table** for product information, **DimDate_Table** for temporal data, **FactInternetSales_Table** for sales transactions, and **SalesBudget** for budget comparisons. These interconnected tables enable multidimensional sales analysis.
+
+![alt text](Figs/Data_Modeling.PNG)
+
+## **(9) Creating a Dynamic Dashboard Using Power BI:**
 https://github.com/user-attachments/assets/f2ed213d-9e53-4622-ba5d-45889119aa0d
 
-## **(9) Business Insights:**
-
+## **(10) Business Insights:**
 - The donut chart illustrates that the vast majority of total sales, amounting to 28.32 million (96.61%), are from the Bikes category, while Accessories and Clothing together constitute a minor portion, totaling 0.67 million (2.29%).
 
 - The bar chart highlights that the "Mountain-200 Black, 46" product leads total sales at 1.37 million, while the "Road-150 Red, 56" product has the lowest sales among the top ten, at 1.06 million. The sales figures for the top products are relatively close, ranging from approximately 1.06 million to 1.37 million.
@@ -144,7 +148,7 @@ https://github.com/user-attachments/assets/f2ed213d-9e53-4622-ba5d-45889119aa0d
 
 - The map on the right illustrates customer frequency by country, highlighting significant customer bases in North America (United States and Canada), Europe (Germany, France, and the United Kingdom), and Australia.
   
-## **(10) Data Source:**
+## **(11) Data Source:**
 The data for this project is sourced from the AdventureWorksDW2019 sample database provided by Microsoft, designed for analytical processing and business intelligence. This database offers a comprehensive dataset ideal for sales analysis and reporting. Detailed instructions for accessing and configuring the database can be found on the AdventureWorks Sample Databases page.
 link: (https://learn.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver17&tabs=ssms)
 
