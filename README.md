@@ -6,27 +6,31 @@
 2. **Data Extraction:** Use SQL to extract target data from (AdventureWorksDW2019) Data Warehouse and clean it for analysis.
 3. **Dashboard Creation:** Develop a dynamic Power BI dashboard to visualize key metrics.
 
+##  **(2) Tools I Used:**
+1. **Microsoft SQL Server:** Employed for data extraction and manipulation using SQL queries, ensuring efficient and accurate data retrieval from the AdventureWorksDW2019 database.
+2. **Power BI:** For creating dynamic and interactive dashboards.
+3. **GitHub:** For sharing my SQL scripts, dashboards, and business insights.
+   
+##  **(3) Business Request:**
 
-##  **(2) Business Request:**
-
-**2.1. Sales Analysis:**
+**3.1. Sales Analysis:**
 
 - **Product Sales**: Determine the quantity of each product sold.
 - **Client Segmentation**: Identify which clients purchased these products.
 - **Temporal Analysis**: Analyze how sales have evolved over time.
 
-**2.2. Budget Comparison:**
+**3.2. Budget Comparison:**
 - Compare the actual sales numbers against the budgeted figures.
 
 - The budget covers the period from **2021** to **2025** and has been included in a spreadsheet for performance comparison.
 
-##  **(3) Introduction:**
+##  **(4) Introduction:**
 The Sales Analysis of **(AdventureWorksDW2019)** project aims to dissect and interpret sales data to **facilitate strategic business decisions**. By employing **SQL** for data extraction and **Power BI** for visualization, the project seeks to **transform raw data into meaningful insights**. The focus is on understanding **sales trends, customer behavior, and budget performance to optimize sales strategies and enhance customer engagement**.
 
 This analysis will address key business inquiries, including identifying **top-selling products, analyzing customer purchasing patterns, and comparing actual sales against budgeted figures from 2021 to 2025**. The insights gained will enable stakeholders to make informed decisions, ultimately driving revenue growth and operational efficiency.
 
-##  **(4) Data Extraction and Preparation (SQL Data Querying):**
-### **4.1. Data Extraction for (Dim_Product_Table):**
+##  **(5) Data Extraction and Preparation (SQL Data Querying):**
+### **5.1. Data Extraction for (Dim_Product_Table):**
 ```sql
 -- Cleansed DimProduct Table:
 SELECT 
@@ -49,7 +53,7 @@ FROM
 ORDER BY 
 	p.ProductKey ASC;
 ```
-### **4.2. Data Extraction for (DimCustomer_Table):**
+### **5.2. Data Extraction for (DimCustomer_Table):**
 ```sql
 -- Cleansed DimCustomer Table:
 SELECT
@@ -70,7 +74,7 @@ FROM
 ORDER BY
 	c.CustomerKey ASC;
 ```
-### **4.3. Data Extraction for (DimDate_Table):**
+### **5.3. Data Extraction for (DimDate_Table):**
 ```sql
 -- Cleansed DimDate Table:
 SELECT
@@ -88,7 +92,7 @@ FROM
 WHERE
 	CalendarYear >= '2021' AND CalendarYear <= '2024';
 ```
-### **4.3. Data Extraction for (FactInternetSales_Table):**
+### **5.4. Data Extraction for (FactInternetSales_Table):**
 ```sql
 -- Cleansed FactInternetSales Table:
 SELECT 
@@ -107,24 +111,24 @@ WHERE
 	LEFT(OrderDateKey, 4) >= '2021' AND LEFT(OrderDateKey, 4) <= '2024';
 ```
 
-##  **(5) Exporting Query Results to CSV:**
+##  **(6) Exporting Query Results to CSV:**
 In this section, we focus on exporting the refined and cleansed data obtained from SQL queries into CSV format. This process facilitates further analysis and integration with other data analysis tools, ensuring that the data is readily accessible for visualization and reporting purposes.
 
 By converting the SQL query results into CSV files, we enable seamless data manipulation and sharing across different platforms, thereby enhancing the flexibility and scalability of our data analysis.
 
 ![alt text](Figs/1.PNG)
 
-##  **(6) Data Integration into Power BI (Importing Datasets into Power BI):**
+##  **(7) Data Integration into Power BI (Importing Datasets into Power BI):**
 In the **Data Integration into Power BI** section, we import **CSV files** and **Excel budget document** into **Power BI**, consolidating diverse data sources for unified analysis and visualization. 
 
 **Power Query** enhances this process with its robust data transformation and cleansing capabilities, ensuring data accuracy and optimization. This integration is crucial for creating dynamic reports and dashboards, facilitating informed decision-making.
 
 ![alt text](Figs/2.PNG)
 
-## **(7) Creating a Dynamic Dashboard Using Power BI:**
+## **(8) Creating a Dynamic Dashboard Using Power BI:**
 https://github.com/user-attachments/assets/f2ed213d-9e53-4622-ba5d-45889119aa0d
 
-## **(8) Business Insights:**
+## **(9) Business Insights:**
 
 - The donut chart illustrates that the vast majority of total sales, amounting to 28.32 million (96.61%), are from the Bikes category, while Accessories and Clothing together constitute a minor portion, totaling 0.67 million (2.29%).
 
@@ -140,7 +144,7 @@ https://github.com/user-attachments/assets/f2ed213d-9e53-4622-ba5d-45889119aa0d
 
 - The map on the right illustrates customer frequency by country, highlighting significant customer bases in North America (United States and Canada), Europe (Germany, France, and the United Kingdom), and Australia.
   
-## **(9) Data Source:**
+## **(10) Data Source:**
 The data for this project is sourced from the AdventureWorksDW2019 sample database provided by Microsoft, designed for analytical processing and business intelligence. This database offers a comprehensive dataset ideal for sales analysis and reporting. Detailed instructions for accessing and configuring the database can be found on the AdventureWorks Sample Databases page.
 link: (https://learn.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver17&tabs=ssms)
 
