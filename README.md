@@ -2,7 +2,7 @@
 
 
 ## **(1) Project Roadmap:**
-1. **Define Problem Statement:** Clearly outline objectives, and business requests.
+1. **Define Problem Statement:** Clearly outline objectives and business requests.
 2. **Data Extraction:** Use SQL to extract target data from (AdventureWorksDW2019) Data Warehouse and clean it for analysis.
 3. **Dashboard Creation:** Develop a dynamic Power BI dashboard to visualize key metrics.
 
@@ -121,5 +121,27 @@ In the **Data Integration into Power BI** section, we import **CSV files** and *
 
 ![alt text](Figs/2.PNG)
 
-
+## **(7) Creating a Dynamic Dashboard Using Power BI:**
 https://github.com/user-attachments/assets/f2ed213d-9e53-4622-ba5d-45889119aa0d
+
+## **(8) Business Insights:**
+
+- The donut chart illustrates that the vast majority of total sales, amounting to 28.32 million (96.61%), are from the Bikes category, while Accessories and Clothing together constitute a minor portion, totaling 0.67 million (2.29%).
+
+- The bar chart highlights that the "Mountain-200 Black, 46" product leads total sales at 1.37 million, while the "Road-150 Red, 56" product has the lowest sales among the top ten, at 1.06 million. The sales figures for the top products are relatively close, ranging from approximately 1.06 million to 1.37 million.
+
+- The bar chart shows that Jordan Turner is the top customer by total sales, with 16K, significantly leading compared to others, while the rest of the top customers have sales figures closely clustered around 13.2K to 13.5K.
+
+- The KPI card indicates that total sales have significantly exceeded the budget, with actual sales reaching 29,312,983 against a budget of 8,191,000. The line chart shows that total sales consistently outperform the total budget throughout the year, with noticeable peaks in sales during the mid-year months.
+
+- Fairly balanced gender distribution, with males slightly leading at 50.59% compared to females at 49.41%.
+
+- London has the highest customer frequency among cities, followed by Paris and Burien, with other cities having relatively similar and lower frequencies. 
+
+- The map on the right illustrates customer frequency by country, highlighting significant customer bases in North America (United States and Canada), Europe (Germany, France, and the United Kingdom), and Australia.
+  
+## **(9) Data Source:**
+The data for this project is sourced from the AdventureWorksDW2019 sample database provided by Microsoft, designed for analytical processing and business intelligence. This database offers a comprehensive dataset ideal for sales analysis and reporting. Detailed instructions for accessing and configuring the database can be found on the AdventureWorks Sample Databases page.
+link: (https://learn.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver17&tabs=ssms)
+
+
